@@ -1,10 +1,12 @@
+# Format /wikiextract/insert_errors.py 
+'''Adds grammatical errors to hindi_pos_tags.txt
+'''
 
 import random
 import csv
 from math import ceil
 import ast
 
-# Define constants for error handling
 skip_tokens = ('गे', 'दे', 'ले', 'गा','जाए','जा', 'ला', 'ले', 'पा', 'खा', 'चाहिए', 'समाजवादी', 'विधानसभा', 
                'थालिपीठे', 'मराठवाड़ा', 'अन्यथा', 'खुफिया', 'अनसुना', 'इन्होंने')
 exceptions = (('है', 'हैं'), ('था', 'थे', 'थी', 'थीं'), ('हुआ', 'हुई', 'हुए', 'हुईं'))
@@ -23,7 +25,6 @@ vb_endings = ('ा', 'े', 'ी', 'ीं')
 endings1 = ('या', 'ए', 'ई', 'ईं',)
 endings2 = ('या', 'ये', 'यी', 'यीं')
 
-# Function definitions
 def random_except(options, choice):
     remaining = list(options)
     if (choice in remaining):
@@ -45,19 +46,15 @@ def insert_single_error(sentence):
 
     for i, word in enumerate(sentence):
         token, tag = word
-        original_token = token
 
-        # Skip tokens
         if token in skip_tokens or len(token)<2:
             continue
 
-        # Handle exceptions
         elif any(token in ex for ex in exceptions):
             matching_exception = next(ex for ex in exceptions if token in ex)
             modified_token = random_except(matching_exception, token)
             erroneous_sentences.append(' '.join(words[:i] + [modified_token] + words[i+1:]))
         
-        # Handle adjective endings
         elif len(token) > 4 and token[-1] in adj_endings and token[-4:-1] == 'वाल':
             modified_token = token[:-1] + random_except(adj_endings, token[-1])
             erroneous_sentences.append(' '.join(words[:i] + [modified_token] + words[i+1:]))
@@ -66,7 +63,6 @@ def insert_single_error(sentence):
             modified_token = token[:-1] + random_except(adj_endings, token[-1])
             erroneous_sentences.append(' '.join(words[:i] + [modified_token] + words[i+1:]))
 
-        # Handle verb endings
         elif tag == 'PRON' and token[-1] in adj_endings and (token[-2] in ('र', 'क') or token.startswith('अप')):
                 modified_token = (token[:-1] + random_except(adj_endings, token[-1]))
                 erroneous_sentences.append(' '.join(words[:i] + [modified_token] + words[i+1:]))
@@ -88,7 +84,7 @@ def process_sentences(input_file, output_file):
     with open(input_file, 'r', encoding='utf-8') as infile:
         data = infile.read()
 
-    sentences = data.split('\n')  # Split sentences by '.'
+    sentences = data.split('\n')  
     output_rows = []
 
     for sentence in sentences:
@@ -104,16 +100,16 @@ def process_sentences(input_file, output_file):
         for variant in erroneous_variants:
             output_rows.append([variant, untagged_sentence])
 
-    # Save results to CSV
+    
     with open(output_file, 'w', newline='', encoding='utf-8') as csvfile:
         writer = csv.writer(csvfile)
-        writer.writerow(["hi_err", "hi_corr"])  # Header
+        writer.writerow(["hi_err", "hi_corr"]) 
         writer.writerows(output_rows)
 
     print(f"Processed {len(sentences)} sentences. Results saved to {output_file}.")
 
-# Main execution
+
 if __name__ == "__main__":
-    input_file = "hindi_pos_tags.txt"  # Input text file with Hindi sentences
-    output_file = "output.csv"  # Output CSV file
+    input_file = "hindi_pos_tags.txt" 
+    output_file = "mono_hi_train.csv"  
     process_sentences(input_file, output_file)

@@ -1,12 +1,13 @@
+'''POS Tagger for hindi.input.txt as extracted using wikiextract/
+'''
+
 import stanza
 import csv
 
-# Initialize Stanza for Hindi
 def initialize_stanza():
-    stanza.download("hi")  # Download Hindi language model
+    stanza.download("hi") 
     return stanza.Pipeline(lang="hi", processors="tokenize,pos")
 
-# POS Tagging function
 def tag_pos(sentence, nlp):
     """
     Tags parts of speech for a given Hindi sentence using Stanza.
@@ -22,7 +23,6 @@ def tag_pos(sentence, nlp):
             tagged_words.append((word.text, word.upos))  # Text and Universal POS tags
     return tagged_words
 
-# Process sentences and save to CSV
 def process_and_save_with_pos(input_file, output_file, nlp):
     with open(input_file, 'r', encoding='utf-8') as infile:
         data = infile.read()
@@ -35,23 +35,17 @@ def process_and_save_with_pos(input_file, output_file, nlp):
         if not sentence:
             continue
 
-        # POS Tagging
         tagged_words = tag_pos(sentence, nlp)
         output_rows.append(str(tagged_words))
 
-    # Save results to CSV
     with open(output_file, 'w', newline='', encoding='utf-8') as csvfile:
-        # writer = csv.writer(csvfile)
-        # writer.writerow(["POS Tags"])  # Header
-        # writer.writerows(output_rows)
         csvfile.write("\n".join(output_rows))
 
     print(f"Processed {len(sentences)} sentences. Results saved to {output_file}.")
 
-# Main execution
 if __name__ == "__main__":
-    input_file = "hindi.input.txt"  # Input file with Hindi sentences
-    output_file = "hindi_pos_tags.txt"  # Output file for POS-tagged sentences
+    input_file = "hindi.input.txt"  
+    output_file = "hindi_pos_tags.txt"  
 
     # Initialize Stanza NLP
     nlp_pipeline = initialize_stanza()
