@@ -1,0 +1,3 @@
+[submodule "wikiextract"]
+	path = wikiextract
+	url = https://github.com/s-ankur/wikiextract
