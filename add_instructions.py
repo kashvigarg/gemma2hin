@@ -5,6 +5,7 @@ ROOT_DIR = os.getcwd()
 os.chdir("../mono-hi")
 PATH_DIR = os.getcwd()
  
+ #edit commit
 instructions = [
     "Identify and correct the mistake in the provided Hindi sentence:",
     "Fix the grammar error in the given Hindi sentence:",
