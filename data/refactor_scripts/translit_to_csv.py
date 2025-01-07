@@ -5,12 +5,17 @@ import csv
 from datasets import load_dataset
 
 ROOT_DIR = os.getcwd()
-os.chdir("../translit")
+os.chdir("../transliteration")
 PATH_DIR = os.getcwd()
 FILENAME = "translit1.csv"
+DSNAME = "hinglish.aditi/hinglish.aditi.csv"
 
 CSV_PATH = os.path.join(PATH_DIR, FILENAME)
+DS_PATH = os.path.join(PATH_DIR, DSNAME)
+# df1 = pd.read_csv(CSV_PATH)
+# df2 = pd.read_csv(DS_PATH)
 
+# print(len(df1))
 ds = load_dataset("manishiitg/aditi-syn-v2")
 
 with open (CSV_PATH, "w", encoding="utf-8") as f:
@@ -24,6 +29,6 @@ with open (CSV_PATH, "w", encoding="utf-8") as f:
                 data_list.append("You are an AI Assistant.")
             else :
                 data_list.append(content['content'])
-        
-        writer.writerow(data_list)
+        if len(data_list)==3:
+            writer.writerow(data_list)
 
