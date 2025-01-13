@@ -1,0 +1,248 @@
+अजीवात् जनन	Abiogenesis
+अजैविक	Abiotic
+अवशोषण	Absorption
+अकोशिकीय	Acellular
+अनुकूलन	Adaptation
+शैवाल	Algae
+उपचय	Anabolism
+अवायवीय	Anaerobic
+पुमंग	Androecium
+आवृतबीजी	Angiosperm
+परागकोश	Anther
+प्रतिजैविक	Antibiotic
+धमनी	Artery
+स्वांगीकरण	Assimilation
+आलिंद	Auricle
+जीवाणु	Bacteria
+छाल	Bark
+व्यवहार	Behavior
+द्विवर्षीय	Biennial
+द्विपार्श्विक	Bilateral
+द्विनेत्री दृष्टि	Binocular vision
+द्विपद-नाम पद्धति	Binomial nomenclature
+जैवसंचयन	Bioaccumulation
+जैवरसायन	Biochemistry
+जैवनिम्नीकरण	Biodegradable
+जैवविविधता	Biodiversity
+जीवात् जनन	Biogenesis
+रक्त	Blood
+रक्त चाप	Blood pressure
+अस्थि मज्जा	Bone marrow
+मस्तिष्क स्तम्भ	Brain stem
+एधा	Cambium
+कोशिका	Cell
+कोशिका विभाजन	Cell division
+कोशिका भित्ति	Cell wall
+केन्द्रीय तन्त्रिका तन्त्र	Central nervous system
+तारक केन्द्र	Centriole
+तारक काय	Centrosome
+अनुमस्तिष्क	Cerebellum
+प्रमस्तिष्क वल्कुट	Cerebral cortex
+प्रमस्तिष्क गोलार्द्ध	Cerebral hemisphere
+प्रमस्तिष्कमेरु द्रव	Cerebrospinal fluid
+प्रमस्तिष्क	Cerebrum
+रज्जुकी संघ	Chordate
+गुणसूत्र	Chromosome
+वर्गीकरण	Classification
+संयोजी ऊतक	Connective tissue
+कोशिका द्रव्य	Cytoplasm
+पर्णपाती	Deciduous
+पातीदन्त	Deciduous teeth
+अपघटन	Decomposition
+द्विबीजपत्री	Dicotyledon
+पाचन	Digestion
+द्विगुणित	Diploid
+रोग	Disease
+दिवाचर	Diurnal
+डी ऑक्सी राइबो न्यूक्लिक एसिड	D.N.A.
+पारिस्थितिकी	Ecology
+पारिस्थितिकी तंत्र	Ecosystem
+भ्रूण	Embryo
+भ्रूणविज्ञान	Embryology
+अन्तःस्त्रावी ग्रन्थि	Endocrine gland
+अन्तःपरजीवी	Endoparasite
+अन्तर्द्रव्यी जालिका	Endoplasmic reticulum
+विकास	Evolution
+उत्सर्जन	Excretion
+वसा	Fat
+प्राणिजात	Fauna
+निषेचन	Fertilization
+रेशा, तन्तु	Fibre
+वनस्पतिजात	Flora
+जीवाश्म	Fossil
+कवक	Fungi
+पित्ताशय	Gall bladder
+गाल्गीकाय	Galgi body
+युग्मक	Gamete
+युग्मक जनन	Gametogenesis
+युग्मकोद्भिद्	Gametophyte
+लिंङ्ग	Gender
+जीन	Gene
+वंश	Genus
+अंकुरण	Germination
+अनावृतबीजी	Gymnosperm
+जायांग	Gynoecium
+आवास	Habitat
+वासस्थान	Habituation
+लवणमृदोद्भिद्	Halophyte
+अगुणित	Haploid
+आनुवांशिक	Heredity
+समस्थापन	Homeostasis
+संकरण	Hybridization
+बीजपत्राधार	Hypocotyls
+अधस्त्वक	Hypodermis
+हाइपोथैलेमस, अधश्चेतक	Hypothalamus
+प्रतिरक्षा	Immunity
+प्रतिरक्षीकरण	Immunization
+प्रतिरक्षा विज्ञान	Immunology
+आवेग	Impulse
+ऊष्मायन	Incubation
+पुष्पवृन्त	Inflorescence
+वंशागति	Inheritance
+आन्त्र	Intestine
+अकशेरुकी	Invertebrate
+अनैच्छिक	Involuntary
+जबड़ा	Jaw
+सन्धि	Joint
+बाल, किशोर	Juvenile
+केन्द्रक प्ररूप, गुणसूत्र प्ररुप	Karyotype
+वृक्क	Kidney
+डिंभ	Larva
+कंठ	Larynx
+पर्ण	Leaf
+शैक	Lichen
+स्नायु	Ligament
+सहलग्नता	Linkage
+लिपि़ड	Lipid
+सजीव जीवाश्म	Living fossil
+लसीका	Lymph
+लाइसोसोम, लयनकाय	Lysosome
+नर	Male
+चर्वण	Mastication
+परिपक्वन	Maturation
+अर्धसूत्री विभाजन	Meiosis
+कला	Membrane
+आंत्रसंयोजी	Mesentery
+मध्यफल भित्ति	Mesocarp
+मध्यजनस्तर	Mesoderm
+उपापचय	Metabolism
+कायान्तरण	Metamorphosis
+रोगाणु	Microbe
+सूक्ष्म जीवाश्म	Microfossil
+सूत्रीविभाजन, समसूत्रण	Mitosis
+एकबीजपत्री	Monocot
+आकारिकी	Morphology
+पेशी	Muscle
+उत्परिवर्तन	Mutation
+निकट दृष्टि दोष	Myopia
+ऊतकक्षय	Necrosis
+मकरंद	Nectar
+तन्त्रिका	Nerve
+तन्त्रिका रज्जु	Nerve cord
+तन्त्रिका कोशिका	Neuron
+पृष्ठरज्जु	Notochord
+केन्द्रक	Nucleus
+पाचन	Nutrition
+निम्फ, अर्भक	Nymph
+ग्रसिका, ग्रासनली	Oesophagus
+भ्रूणधानी	Ooecium
+विषमयुग्मता	Oogamy
+अंडजनन	Oogenesis
+मुखीय	Oral
+जीव	Organism
+परासरणनियमन	Osmoregulation
+परासरण	Osmosis
+अण्डाशय	Ovary
+अण्डज	Oviparous
+बीजांड	Ovule
+अण्डाणु	Ovum
+आक्सीकरण, उपचयन	Oxidation
+शावकीजनन	Paedogenesis
+अग्न्याशय	Pancreas
+परानुकंपी तंत्रिका तंत्र	Parasympathetic nervous system
+अनिषेकजनन	Parthenogenesis
+बहुवर्षीय	Perennial
+परिदल पुंज	Perianth
+दल, पंखुड़ी	Petal
+दलाभ	Petaloid
+अश्मीभवन	Petrification
+ग्रसनी	Pharynx
+कागजन	Phellogen
+समलक्षणी, लक्षणसमष्टि	Phenotype
+पोषवाह	Phloem
+प्रकाशीय श्वशन	Photorespiration
+प्रकाशसंश्लेषण	Photosynthesis
+प्रकाशानुचलन	Phototaxis
+प्रकाशदृक् दृष्टि	Phototopic Vision
+संघ	Phylum
+शैवाल विज्ञान	Phycology
+शरीर क्रियाविज्ञान	Physiology
+मत्स्य वर्ग	Pisces
+अपरा	Placenta
+पराग	Pollen
+बहुगुणित	Polyploidy
+बहुमूत्रता	Polyuria
+प्राइमेट्स, नरवानर गण	Primates
+जीवद्रव्य	Protoplasm
+कूटपाद	Pseudopodium
+नाड़ी	Pulse
+पूतिभवन	Putrification
+प्रतिवर्ती चाप	Reflex arc
+पुनरुद्भवन	Regeneration
+प्रबलन	Reinforcement
+प्रजनन	Reproduction
+सरिसृप	Reptilia
+अनुक्रिया	Response
+राइबो न्यूक्लिक एसिड	R.N.A.
+मूलग्रंथि	Root nodules
+गोलकृमि	Roundworms
+कोष	Sac
+लार	Saliva
+स्वपरागण	Self-pollination
+ज्ञानेन्द्रिय	Sense organ
+यौन	Sex
+यौन संक्रामक रोग	Sexually Transmitted Disease (STD)
+कायिक	Somatic
+जाति	Species
+बीजाणु	Spore
+बीजाणुधानी	Sporogonium
+पुंकेशर	Stamen
+आमाशय	Stomach
+वर्तिकाग्र	Stigma
+वर्तिका	Style
+सहजीविता	Symbiosis
+सममिति	Symmetry
+अनुकंपी तंत्रिका तंत्र	Sympathetic nervous system
+स्वाद कलिका	Taste bud
+वर्गिकी	Taxonomy
+वृषण	Testis
+ऊतक	Tissue
+ऊतक संवर्धन	Tissue culture
+आविष विज्ञान	Toxicology
+आविष	Toxin
+नाभिरज्जु	Umbilical cord
+एककोशिकीय	Unicellular
+गर्भाशय	Uterus
+पराबैंगनी विकिरण	Ultraviolet radiation
+टीकाकरण	Vaccination
+रसधानी, रिक्तिका	Vacuole
+जीविष	Venom
+निलय	Ventricle
+कशेरुक	Vertebra
+मेरुदंड	Vertebral column
+कशेरुकी	Vertebrate
+विषाणु	Virus
+दृष्टि	Vision
+जरायुजता	Viviparity
+ऐच्छिक	Voluntary
+श्वेत रुधिराणु	White blood corpuscles
+पर, पंख	Wing
+गर्भाशय	Womb
+मरुद्भिद्	Xerophyte
+दारु	Xylem
+खमीर, यीस्ट	Yeast
+पीतक	Yolk
+पीतक कोष	Yolk sac
+जीवविज्ञान	Zoology
+प्राणिप्लवक	Zooplankton
+युग्मज	Zygote

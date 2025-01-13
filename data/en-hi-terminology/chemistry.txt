@@ -1,0 +1,557 @@
+परिशुद्ध एल्कोहॉल	Absolute Alcohol
+परमताप	Absolute temperature
+परमशून्य	Absolute zero
+अवशोषण	Absorption
+त्वरण	Acceleration
+ग्राही	Acceptor
+संचायक	Accumulator
+इंगिता	Achiral
+अम्लमिति	Acidimetry
+सक्रियण ऊर्जा	Activation energy
+सक्रिय संहति	Active mass
+सक्रियता	Activity
+सक्रिय गुणांक	Activity coefficient
+अचक्रीय	Acyclic
+संकलन अभिक्रिया	Addition reaction
+संकलन बहुलन	Addition polymerization
+योगोत्पाद	Adduct
+रूद्धोष्म	Adiabatic
+अधिशोषण	Adsorption
+वतिलयन,प्रश्लिष	Aerosol
+बंधुत्व	Affinity
+स्निग्ध	Aliphatic
+अपररूपता	Anisotropy
+मि‌‌‌‌‌‌‌‌‌‌‌श्रातु	Alloy
+फिटकरी	Alum
+पारदधातु मिश्रण	Amalgam
+अक्रिस्टलीय	Amorphous
+उभयप्रोटिक	Amphiprotic
+उभयधर्मी	Amphoteric
+उपपाचन	Anabolism
+विश्लेषण	Analysis
+ॠणायन	Anion
+विषमदैशिकता	Anisotropy
+अनिलिन	Annealing
+धनाग्र	Anode
+धनाग्रीकरण	Anodizing
+प्रति-आबंधन कक्षक	Antibonding orbital
+अपस्फोटरोधी कर्मक	Antiknock agent
+ऐक्वारेजिया	Aqua regia
+जलीय	Aqueous
+ऐरोमैटिक यौगिक	Aromatic compound
+ऐरोमैटिकता	Aromaticity
+आर्सेनिक, शंखिया	Arsenic
+वायुमंडलीय प्रश्लिष	Atmospheric aerosol
+परमाणु	Atom
+परमाण्विकता	Atomicity
+परमाणु-क्रमांक	Atomic number
+परमाणु-भार	Atomic weight
+परमाणु कक्षक	Atomic orbital
+स्थिरक्वाथी	Azeotrope
+स्तम्भ वर्णक्रम	Bar spectrum
+क्षार	Base
+आधार धातु	Base metal
+क्षारीय	Basic
+गण प्रक्रम	Batch process
+द्वि-आणुक	Bimolecular
+जैव रसायन	Bio-chemistry
+जैव निम्नीकरणीय	Biodegradable
+जैव संश्लेषण	Biosynthesis
+बिटूमेन	Bitumen
+द्विसंयोजक	Bivalent
+वात्या भट्टी	Blast furnace
+ब्लैंड	Blende
+विरंजक चूरा	Bleaching powder
+बंध, आबन्ध, बन्धन	Bond
+बंधन ‌ऊर्जा	Bond energy
+क्वथनांक	Boiling point
+पीतल	Brass
+बफ़र	Buffer
+उपोत्पाद	By-product
+निस्तापन	Calcination
+कार्बन-ॠणायन	Carbanion
+कार्बोहाइड्रेट्स	Carbohydrates
+कार्बोनेटीकरण	Carbonation
+कार्बन दिनांकन	Carbon dating
+कैंसरजन	Carcinogen
+कार्नो चक्र	Carnot cycle
+ढलवाँ लोहा	Cast iron
+अपचय	Catabolism
+उत्प्रेरक	Catalyst
+शृंखलन	Catination
+ऋणाग्र	Cathode
+धनायन	Cation
+दाहक सोडा	Caustic soda
+अपकेंद्रित्र	Centrifuge
+भृत्तका शिल्प	Ceramics
+शृंखला अभिक्रिया	Chain reaction
+लकड़ी का कोयला, चारकोल	Charcoal
+कीलेट	Chelate
+रासायनिक बंध	Chemical bond
+रासायनिक स्फुरदीप्ति	Chemiluminescence
+कीरेलिटी	Chirality
+क्लोरीनीकरण	Chlorination
+वर्णलेखन	Chromatography
+जालकवत	Clathrate
+चिकनी मिट्टी	Clays
+विदलन	Cleavage
+स्कंदन	Coagulation
+सहएंजाइम	Coenzyme
+मुद्राधातु	Coinage metals
+कोक	Coke
+अपुसंख्य गुणधर्म	Colligative properties
+समांतरित	Collimator
+कोलाइड	Colloid
+स्तंभ वर्णलेखन	Column chromatography
+दहन	Combustion
+संकर	Complex
+घटक	Component
+यौगिक	Compound
+सान्द्रण	Concentration
+संघनन	Condensation
+चालक बहुलक	Conducting polymer
+चालकतामूलक अनुमापन	Conductomeric titration
+विन्यास	Configuration
+संपुष्टि	Conformation
+संयुग्मी (अम्ल/क्षार)	Conjugate(Acid/Base)
+संर‍‌‌‌क्षण	Conservation
+सतत वर्णक्रम	Continuous spectrum
+उपसहसंयोजी बंध	Coordinate bond
+समन्वय संख्या	Coordination number
+सहबहुलीकरण	Copolymerization
+संक्षारण	Corrosion
+युग्मन	Coupling
+सहसंयोजी आबंध	Covalent bond
+सहसंयोजी त्रिज्या	Covalent radius
+चटकना	Cracking
+भंजन	Cracking of oil
+क्रांतिक बिन्दु	Critical point
+आड़ी कड़ी	Cross linkage
+कच्चा तेल	Crude oil
+क्रिस्टल, क्रिस्टलीय,रवेदार	Crystal/Crystalline
+क्रिस्टल वि‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌ज्ञान	Crystallography
+क्यूपेलीकरण	Cupellation
+चक्रीय यौगिक	Cyclic compound
+चक्रीकरण	Cyclisation
+साइक्लोहेक्सेन	Cyclohexane
+निष्क्रियकरण	Dectivation
+अपघटन	Decomposition
+चटक भंजन,कड़कड़न,कड़कड़ाहट	Decripitation
+दोष, त्रुटि, क्षति, कमी	Defect
+अपभ्रष्ट होना	Degenerate
+निम्नीकरण, तलावचन, अवकर्षण	Degradation
+स्वातंत्र्य कोटि, स्वतंत्रता की कोटि	Degree of freedom
+निर्जलीकरण	Dehydration
+प्रस्वेदी	Deliquescent
+अस्थानीकरण	Delocalization
+विकृतिकरण, गुणनाशन	Denaturation
+घनत्व	Density
+विध्रुवक	Depolaenizer
+विध्रुवन	Depolarization
+हिमांक अवनमन	Depression of freezing point
+जलशुष्कन	Desiccation
+भंजक आसवन	Destructive distillation
+अपमार्जक	Detergents
+ड्यूटरित यौगिक	Deuterated compound
+विकर्ण सबंध	Diagonal relationship
+प्रतिचुंबकत्व	Diamagnetism
+द्विपरमाणुक	Diatomic
+डाइएजोरीकरण	Diazotization
+विसरण	Diffusion
+तनु	Dilute
+द्वितय	Dimer
+द्विरूपता	Dimorphism
+द्विध्रुव आघूर्ण	Dipole moment
+डाइसैकेराइड	Disaccharides
+परिक्षेपित प्रावस्था	Dispersed phase
+असमानुपातन	Disproportionation
+वियोजन	Dissociation
+दाता	Donor
+मादन, अपमिश्रण	Doping
+द्वि-आबंध	Double bond
+द्वि-लोन	Double salt
+शुष्क कोश	Dry cell
+रंजक	Dye
+दक्षता	Efficiency
+उत्फुल्लन	Efflorescence
+प्रत्यास्थलक	Elastomer
+विद्युतरासायनिक तुल्यांक	Electrochemical equivalent
+विद्युतरासायनिक श्रेणी	Electrochemical series
+विद्युतरासायनिकी	Electro chemistry
+विद्युदग्र	Electrode
+विद्युदग्र स्थिति	Electrode position
+विद्युदग्र विभव	Electrode potential
+विद्युत-अपघटन	Electrolysis
+विद्युत-अपघट्य	Electrolyte
+विद्युदणु बन्धुता	Electron affinity
+विद्युदणु विवर्तन	Electron diffraction
+विद्युतॠणात्मक, ॠणविद्युती	Electro negativity
+इलेक्ट्रानिक संक्रमण	Electronic transition
+विद्युदणु युग्म	Electron pair
+विद्युदणु-स्नेही	Electrophilic
+विद्युदणुस्नेही योग	Electrophilic addition
+विद्युदणुस्नेही प्रतिस्थापन	Electrophilic substitution
+विद्युत-लेपन	Electroplating
+वैद्युतसंयोजक बंध	Electrovalent bond
+तत्व	Element
+निराकरण क्रियाएँ	Elimination reaction
+क्षालन	Elution
+उत्सर्जन स्पेक्ट्रम	Emission reaction
+मूलानुपाती सूत्र	Empirical formula
+पायस, इमल्शन	Emulsion
+प्रतिबिंब	Enantiomer
+उत्क्रम्यरूपिता	Enantiotropy
+ऊष्माशोषी	Endothermic
+अंत बिंदु	End point
+ऊर्जा	Energy
+ऊर्जा-स्तर	Energy level
+ऊर्जा-परिच्छेदिका	Energy profile
+एन्जाइम	Enzyme
+एपीमेरिसम	Epimerism
+इपॉक्साइड	Epoxide
+साम्यावस्था	Equilibrium
+तुल्यांकी भार	Equivalent weight
+एस्टरीकरण	Esterification
+गलनक्रांतिक	Eutectic
+वाष्पीकरण	Evaporation
+उत्तेजित अवस्था	Excited state
+अपवर्जन सिद्धान्त	Exclusion principle
+ऊष्माक्षेपी	Exothermic
+विस्फोटिक	Explosive
+किण्वन	Fermentation
+फिल्टर, निस्यंदक	Filter
+फिल्टरन, निस्यंदन	Filtration
+सूक्ष्म संरचना	Fine structure
+स्फुर प्रकाशी अपघटन	Flash photolysis
+स्फुरांक	Flash point
+तरलन, तरलीभवन	Fluidization
+प्रतिदीप्ती	Fluorescence
+फ्लुओर-स्पार	Fluor-spar
+प्रभाजी आसवन	Fractional distillation
+मुक्त ऊर्जा	Free energy
+मुक्त मूलक	Free radical
+हिमांक	Freezing point
+फेन प्लवन	Froth flotation
+संलयन	Fusion(melting)
+यशद-लेपन	Galvanizing
+गेज, प्रमापी	Gaugue
+गैस वर्णलेखिकी, गैस क्रोमैटोग्राफी	Gas chromatography
+गैस नियतांक	Gas constant
+ग्राम-तुल्यांक	Gram equivalent
+कणिकायन	Granulation
+भारात्मक विश्लेषण	Gravimetric analysis
+आद्य अवस्था, निम्नतम अवस्था	Ground state
+गन काटन	Gun cotton
+गन मेटल	Gun metal
+बारूद	Gun powder
+जिप्सम	Gypsum
+हैलोजनीकरण	Halogenation
+कठोरण, दृढ़ीकरण	Hardening
+कठोरता	Hardness
+कठोर जल	Hard water
+ऊष्मा	Heat
+कणीकरण ऊष्मा	Heat of atomisation
+दहन ऊष्मा	Heat of combustion
+क्रिस्टलन ऊष्मा	Heat of crystallisation
+वियोजन ऊष्मा	Heat of dissociation
+उदासीनीकरण ऊष्मा	Heat of neutralisation
+भारी जल, गुरू जल	Heavy water
+विषमांग	Heterogenous
+विषमांश विखंडन	Heterolytic fission
+सजात	Homologous
+समांश विखंडन	Homolytic fission
+हाइड्रेट	Hydrate
+जलयोजन	Hydration
+जल-अपघटन	Hydrolysis
+आर्द्रताग्राही	Hygroscopic
+अतिसूक्ष्म संरचना	Hyperfine structure
+आदर्श गैस	Ideal gas
+सूचक	Indicator
+प्रेरणिक प्रभाव	Inductive effect
+अक्रिय गैसें	Inert gases
+अवरक्त	Infrared
+निरोधी	Inhibitor
+अविलेय	Insoluble
+यंत्रीय	Instrumentation
+अंतर्निवेशन यौगिक	Intercalation compound
+अंतरा-अणुक	Intermolecular
+आंतरिक ऊर्जा	Internal energy
+अंतराकाशी	Interstitial
+निमज्जन	Immersion
+आयन विनिमय	Ion exchange
+आयनी क्रिस्टल	Ionic crystal
+आयनिक त्रिज्या	Ionic radius
+आयनन	Ionization
+समावयवी	Isomer
+समावयवता	Isomerism
+समविभव	Isoelectric
+समाकृतिका	Isomorphism
+समताप रेखा	Isotherm
+समन्यूट्रानिक	Isotones
+समस्थानिक	Isotopes
+जैकेट	Jacket
+जैक पेंच	Jack screw
+जेली रोल	Jelly roll
+बलगति वि‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌ज्ञान	Kinetics
+अणुगतिक सिद्धांत	Kinetic theory
+लेबल	Label
+परिवर्ती	Labile
+काजल	Lamp black
+लैन्थानोएड्स	Lanthanide's
+वामावर्त	Laevoratatory
+गुप्त ऊष्मा	Latent heat
+जालक	Lattice
+निक्षालन करना	Leaching
+संलग्नी, लिगैंड	Ligand
+चूने का पानी	Lime water
+रेखा-स्पेक्ट्रम	Lime spectrum
+निक्षालन	Lixiviation
+एकाकी-युग्म	Lone pair
+संदीप्ति	Luminescence
+द्रवस्नेही	Lyophilic
+द्रवविरोधी	Lyophobic
+बृहदणु	Macromolecule
+चुबंकत्व	Magnetism
+मैनोमीटर, दाबांतरमापी	Manometer
+मैट्रिक्स	Matrix
+आम्लान	Matt
+क्रियाविधि	Mechanism
+गलनशील	Melting
+कला, झिल्ली	Membrane
+धातुकर्म	Metallurgy
+मेटास्टेटिक अवस्था	Metastable state
+सूक्ष्म तरंगें	Microwaves
+दर्पण प्रतिबिंब	Mirror image
+मिश्रणीय	Miscible
+मिश्रण, मिश्र	Mixture
+ग्राम अणुकता	Molarity
+अणु क्रिस्टल	Molecular crystal
+आण्विक सूत्र	Molecular formula
+अणुसंख्यता	Molecularity
+अणु	Molecule
+मोल-अंश	Mole fraction
+एकपरमाणुक	Monoatomic
+एकलक	Monomer
+एकरूपी	Monotropy
+रंगबंधक	Mordant
+बहु बंध	Multiple bond
+परिवर्ती ध्रुवण घूर्णन	Mutarotation
+नवजात	Nascent
+उदासीनीकरण	Neutralization
+उत्कृष्ट	Noble gases
+अधातु	Non-metal
+नार्मलता	Normality
+तुल्यांकी विलयन	Normal solution
+न्यूक्लिओन संख्या	Nucleon number
+नाभिकस्नेही	Nucleophile
+नाभिकस्नेही योग	Nucleophilic addition
+नाभिक स्नेही प्रतिस्थापन	Nucleophilic substitution
+नाभिक	Nucleus
+न्यूक्लाइड	Nuclide
+अधिधारण	Occlusion
+अष्टसंयोजी	Octavalent
+अष्टक	Octet
+ध्रुवण घूर्णकता	Optical activity
+प्रकाशिक समावयवता	Optical isomerism
+चाक्षुष घूर्णन विक्षेपण	Optical rotatory dispersion
+ध्रुवण घूर्णन क्षमता	Optical rotation
+कक्षीय	Orbital
+कोटि	Order
+अयस्क	Ore
+परासरण	Osmosis
+परासरण दाब	Osmotic pressure
+अपचायक, आक्सीकारक	Oxidant
+आक्सीकरण	Oxidation
+ओजोनोलिसिस	Ozonolysis
+कागज वर्णलेखन	Paper chromatography
+आंशिक दाब	Partial pressure
+कण	Particle
+अभिकण	Particulates
+अभिकणीय पदार्थ	Particulate matter
+वितरण गुणांक	Partition coefficient
+निष्क्रिय	Passive
+आवर्त	Period
+आवर्त सारणी	Periodic table
+प्रावस्था	Phase
+प्रावस्था आरेख	Phase diagram
+प्रावस्था साम्य	Phase equilibrium
+प्रावस्था नियम	Phase rule
+स्फुरदीप्ति	Phosphorescence
+प्रकाशरासायनिक अभिक्रिया	Photochemical reaction
+प्रकाशरसायनवि‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌ज्ञान	Photo chemistry
+प्रकाशविद्युत प्रभाव	Photoelectric effect
+प्रकाश इलेक्ट्रॉन उत्सर्जन	Photo-emission
+प्रकाशिक आयनन	Photo ionisation
+प्रकाश-अपघटन	Photolysis
+प्रकाशसंश्लेषण	Photosynthesis
+दाब विद्युत	Piezoelectricity
+कच्चा लोहा	Pig iron
+समतल ध्रुवण	Plane polarization
+ध्रुवीय	Polar
+ध्रुवीय बंध	Polar bond
+ध्रुवणता	Polarisability
+ध्रुवण	Polarisation
+पोलेरोग्राफी	Polarography
+बहुलक	Polymer
+बहुलीकरण	Polymerization
+बहुरूपता	Polymorphism
+बहुशर्कराइड	Polysaccharide
+अवक्षेप	Precipitate
+दाब	Pressure
+प्रोभूजिन	Protein
+माक्षिक	Pyrites
+ताप-अपघटन, तापांशन	Pyrolysis
+उत्तपमापी	Pyrometer
+चतु:संयोजक	Quadrivalent
+गुणात्मक विश्लेषण	Qualitative analysis
+मात्रात्मक विश्लेषण	Quantitative analysis
+क्वाण्टित अणु	Quantinized
+प्रमात्रा विद्युतगतिकी	Quantum electrodynamics
+प्रमात्रा यांत्रिकी	Quantum mechanics
+प्रमात्रा संख्या	Quantum numbers
+प्रमात्रा अवस्था	Quantum state
+प्रमात्रा सिद्धांत	Quantum theory
+क्वार्ट्ज़	Quartz
+शमन	Quenching
+कलीचूना	Quicklime
+रेसिमीकरण	Racemisation
+विकिरण	Radiation
+मूलक	Radical
+विघटननाभिक,रेडियोसक्रिय	Radioactive
+रेडियोसक्रिय क्षय	Radioactive dating
+रेडियोसक्रिय क्षय श्रेणी	Radioactive decay dating
+रेडियोसक्रियता	Radioactivity
+रेडियोसक्रिय रसायन	Radio-chemistry
+विकिरण समस्थानिक	Radioisotope
+विकिरण अपघटन	Radiolysis
+रेडियो-तरंग	Radio waves
+वेग नियतांक	Rate constant
+अभिक्रिया दर	Rate of reaction
+अभिकारक	Reactant
+अभिकर्मक	Reagent
+पुनर्विन्यास	Rearrangement
+पुनःक्रिस्टलन	Recrystallization
+अपचयोपचय	Redox
+अपचयन	Reduction
+अपचयन विभव	Reduction potential
+परिष्करण	Refining
+पश्चवाही	Refluxing
+पुनःसंभावित	Reforming
+अपर्वतन	Refraction
+आपेक्षिक घनत्व	Relative density
+विश्रांति	Relaxation
+वियोजन	Resolution
+अनुनाद	Resonance
+रिटार्ट	Retort
+परावर्तनी भट्टी	Reverberatory furnace
+उत्क्रमणीय परिवर्तन	Reversible change
+उत्क्रमणीय अभिक्रिया	Reversible reaction
+रोज़ धातु	Rose metal
+जंग लगना	Rusting
+लवणीय	Saline
+लोन	Salt
+सैंडविच यौगिक	Sandwich compound
+साबुनीकरण	Saponification
+संतृप्त यौगिक	Saturated compound
+संतृप्त भाप	Saturated vapour
+अवसादन	Sedimentation
+अर्धचालक	Semiconductor
+अर्धपारगम्य	Semipermeable
+प्रच्छादन	Sequestration
+कवच	Shell
+सिलिकेट्स	Silicates
+एकल आबंध	Single bond
+निसाद	Sintering
+धातुमल	Slag
+कर्दम, पिच्छिल	Slummy
+गलाना	Smelting
+साबुन	Soap
+सोडा चूना	Soda lime
+सोडामाइड	Sodamide
+सोल्डर(सं), टाँका लगाना	Solder
+सॉल	Sol
+विलेयता	Solubility
+विलेयता गुणांक	Solubility product
+विलेय	Solute
+विलयन	Solution
+विलायकीयन, विलायक संकरण	Solvation
+विलायक	Solvent
+विलायक अपघटन	Solvolysis
+विशिष्ट घनत्व	Specific gravity
+स्पेक्ट्रोग्राफ	Spectrograph
+वर्णक्रममापी	Spectrometer
+वर्णक्रमदर्शी	Spetroscope
+वर्णक्रमिकी	Spectroscopy
+वर्णक्रम	Spectrum
+घुमाव	Spin
+स्थायीकरण ऊर्जा	Stabilization energy
+स्थायीकारी	Stabilizer
+स्टैलैक्टाइट और स्टैलैग्माइट	Stalactites and Stalagmites
+मानक विद्युदग्र	Standard electrode
+मंड	Starch
+भाप आसवन	Steam distillation
+त्रिविम रसायन	Stereochemistry
+त्रिविम प्रभाव	Steric effect
+रससमीकरणमिति, स्टॉइकियोमेट्री	Stoichiometry
+उर्ध्वपातन	Sublimation
+प्रतिस्थापी	Substituent
+सबस्ट्रेट	Substrate
+गंधक	Sulphur
+अतिचालन	Super-conduction
+अतिशीलन	Supercooling
+अतितरलता	Super-fluidity
+अतितापन	Super-heating
+अधिप्लवी	Supernatant
+अति-जारेय	Super-oxide
+अति-भास्वीय	Super phosphate
+पृष्ठ संक्रियक	Surfactant
+निलंबन	Suspension
+चलावयवता	Tautomerism
+त्रिअंगी यौगिक	Ternary compound
+ऊष्मा रसायन	Thermochemistry
+ऊष्मा गतिकी	Thermodynamics
+अनुमापन	Titration
+अनुरेख गैस	Trace gas
+अनुरेखक	Tracer
+संक्रमण तत्व	Transition elements
+संक्रमण अवस्था	Transition state
+तत्वांतरण	Transmutation
+अभिगमन संख्या	Transport number
+परायूरेनियम तत्व	Transuranium element
+त्रिपरमाणुक	Triatomic
+त्रितय, त्रितयणु	Trimer
+त्रिणुक	Trimolecular
+त्रि-आबंध	Triple bond
+त्रिक बिंदु	Triple point
+ट्राइटियमित यौगिक	Tritiated compound
+दुत अपकेंद्रित्र	Ultracentrifuge
+परा-बैंगनी	Ultraviolet
+एकाण्विक, एकाणुक	Unimolecular
+एकसंयोजी, अयुग्म	Univalent
+सार्वत्रिक सूचक	Universal indicator
+निर्वात	Vacuum
+निर्वात आसवन	Vacuum distillation
+वाष्पन	Vaporization
+भाप	Vapour
+भाप घनत्व	Vapour density
+भाप दाब	Vapour pressure
+संनिधि स्थिति	Vicinal positions
+श्यानता	Viscosity
+काँचाभ	Vitreous
+वाष्पशील	Volatile
+वल्कीनकरण	Vulcanization
+वाल्डन प्रतिलोमन, वाल्डन प्रतीपन	Walden inversion
+भाप-अंगार गैस	Water gas
+जल मृदुलीकरण	Water softening
+मोम	Wax
+वुड्स धातु (प्यूट मिश्र धातु)	Woods metal (pewt alloy)
+ताड्य लौह	Wrought iron
+एक्स-विकिरण	X-radiation
+एक्स-रे क्रिस्टलिकी	X-ray crystallography
+एक्स-रे विवर्तन	X-ray diffraction
+वाई-अक्ष	Y-axis
+उत्पाद	Yield
+पीतक	Yolk
+ज़ियोलाइट	Zeolites
+शून्य कोटि	Zero order
+उभयाविष्ट आयन	Zwitterion
