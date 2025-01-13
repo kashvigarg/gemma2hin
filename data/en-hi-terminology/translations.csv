@@ -143,10 +143,14 @@ Sixteen,सोलह
 Seventeen,सत्रह
 Eighteen,अठारह
 Nineteen,उन्नीस
-Sunday,रविवार, इतवार
+Sunday,रविवार
+Sunday,इतवार
 Monday,सोमवार
 Tuesday,मंगलवार
 Wednesday,बुधवार
-Thursday,गुरुवार, बृहस्पतिवार, वीरवार
+Thursday,गुरुवार
+Thursday,बृहस्पतिवार
+Thursday,वीरवार
 Friday,शुक्रवार
-Saturday,शनिवार, सनीचर
+Saturday,शनिवार
+Saturday, सनीचर
