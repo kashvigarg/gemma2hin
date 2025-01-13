@@ -1,0 +1,152 @@
+0,०
+1,१
+2,२
+3,३
+4,४
+5,५
+6,६
+7,७
+8,८
+9,९
+10,१०
+11,११
+12,१२
+13,१३
+14,१४
+15,१५
+16,१६
+17,१७
+18,१८
+19,१९
+20,२०
+21,२१
+22,२२
+23,२३
+24,२४
+25,२५
+26,२६
+27,२७
+28,२८
+29,२९
+30,३०
+31,३१
+32,३२
+33,३३
+34,३४
+35,३५
+36,३६
+37,३७
+38,३८
+39,३९
+40,४०
+41,४१
+42,४२
+43,४३
+44,४४
+45,४५
+46,४६
+47,४७
+48,४८
+49,४९
+50,५०
+Sum (+),जोड़
+Subtraction (-),घटाव
+Plus-Minus Sign (±),प्लस-ऋण चिह्न
+Multiplication (x),गुणा
+Division (:),भाग
+Percent (%),प्रतिशत
+Since (::),चूंकि
+Therefore (::),इसलिए
+Triangle (Δ),त्रिभुज
+Guava,अमरूद
+Blueberry,ब्लूबेरी
+Lychee,लीची
+Peach,आडू
+Pear,नाशपाती
+Plum,आलूबुखारा
+Strawberry,स्ट्रॉबेरी
+Musk Melon,खरबूजा
+Grapefruit,मौसमी
+Java Plum,जामुन
+Sapodilla,चीकू
+Cherry,चेरी
+Apple,सेब
+Banana,केला
+Pomegranate,अनार
+Mango,आम
+Orange,संतरा
+Pineapple,अनानास
+Grapes,अंगूर
+Watermelon,तरबूज
+Papaya,पपीता
+Red,लाल
+Yellow,पीला
+Green,हरा
+Black,काला
+White,सफ़ेद
+Orange,संतरी
+Blue,नीला
+Purple,बैंगनी
+Grey,स्लेटी
+Pink,गुलाबी
+Brown,भूरा
+Magenta,गहरा गुलाबी
+Peach,पीच
+Forty Two,बयालीस
+Forty Three,तैतालीस
+Forty Four,चवालीस
+Forty Five,पैंतालीस
+Forty Six,छयालिस
+Forty Seven,सैंतालीस
+Forty Eight,अड़तालीस
+Forty Nine,उनचास
+Fifty,पचास
+Twenty,बीस
+Twenty One,इक्कीस
+Twenty Two,बाईस
+Twenty Three,तेइस
+Twenty Four,चौबीस
+Twenty Five,पच्चीस
+Twenty Six,छब्बीस
+Twenty Seven,सताइस
+Twenty Eight,अट्ठाइस
+Twenty Nine,उनतीस
+Thirty,तीस
+Thirty One,इकतीस
+Thirty Two,बतीस
+Thirty Three,तैंतीस
+Thirty Four,चौंतीस
+Thirty Five,पैंतीस
+Thirty Six,छतीस
+Thirty Seven,सैंतीस
+Thirty Eight,अड़तीस
+Thirty Nine,उनतालीस
+Forty,चालीस
+Forty One,इकतालीस
+Zero,शून्य
+One,एक
+Two,दो
+Three,तीन
+Four,चार
+Five,पांच
+Six,छह
+Seven,सात
+Eight,आठ
+Nine,नौ
+Ten,दस
+Eleven,ग्यारह
+Twelve,बारह
+Thirteen,तेरह
+Fourteen,चौदह
+Fifteen,पंद्रह
+Sixteen,सोलह
+Seventeen,सत्रह
+Eighteen,अठारह
+Nineteen,उन्नीस
+Sunday,रविवार, इतवार
+Monday,सोमवार
+Tuesday,मंगलवार
+Wednesday,बुधवार
+Thursday,गुरुवार, बृहस्पतिवार, वीरवार
+Friday,शुक्रवार
+Saturday,शनिवार, सनीचर
