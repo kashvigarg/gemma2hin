@@ -17,7 +17,7 @@ paths = [
     "./data/QnA/HindiQnA.Chemistry.csv"
 ]
 
-tokenizer = AutoTokenizer.from_pretrained("google/gemma-2-2b-it", add_eos_token=True, use_fast=True, token="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")
+tokenizer = AutoTokenizer.from_pretrained("google/gemma-2-2b-it", add_eos_token=True, use_fast=True, token="")
 tokenizer.pad_token = tokenizer.eos_token
 tokenizer.padding_side = "right"
 
