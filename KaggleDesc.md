@@ -55,45 +55,64 @@ With Viraam - Our finetunined Gemma2 Model, our goal is to develop an LLM for Hi
 - Recognizes cultural specific contexts and concepts definitive to Hindi, and its country of origin, India
 
 ## Dataset Curation
-As part of the finetuning process, we train the base instruct Gemma2 on 2 sets of mixed data with the following compositional characteristics:
+Data curation is one of the most if not the most important step in the finetunig process, slightly skewed datasets can lead to major overfitting or underfitting in the later stages, while uncleaned or irrelevant data can lead to halucination in output generation. Keeping these points in mind, our data processing has passed through various phases. These include:-
+- ### Data Creation
+  - Generating artificial or semi-artificial data, using ingenious or AI enabled tools.
+- ### Data Collection
+  - Data scraping.
+    - Includes scraping data from various websites , open sourced github repositories, E-books (which allow such data collection for educational purposes)
+  - Data extraction.
+    - Data extracted using official tools from Wikipedia and Government Of India
+- ### Data Preprocessing
+  - Converting files to compatible file types.
+    - converting from paraquet, tsv or text files to csv or json for ease of handling. 
+  - Cleaning Data Using various techniques.
+    - Uing various regex filters , as well as custom functions to remove special symbols, unrelated or illformed language data and other anomolies from the collected or created data.
+  - Adding instructions into the dataset for instruction based finetunining.
+    - Since we are finetuning an instructive model, various commands and prompts were added in order to get the best results in each data set.
+
+As part of the finetuning process, we train the Gemma2 2b parameter instructive model on a few sets of mixed data with the following compositional characteristics:
 
 #### 1) English to Hindi Translation
 In complex adaptive languages like Hindi, there are multiple ways to express the same idea, for example, the word "Jump" can be translated as उछलो or कूदो, among others.
 
 This variation becomes even more pronounced when considering factors like gender, levels of formality and expressions of respect. In order to build high-quality datasets for our eng-hindi translation task, we chose sources that maintain this variation.
 
-[1] contains 2869 English phrases along with their Hindi translations.
+1. Contains 2869 English phrases along with their Hindi translations [^1].
 
-[2] contains 13182 human-annotated translation pairs 
+2. contains 13182 human-annotated translation pairs of english to hindi translations [^2]
 
-[3] contains about 50k translated pairs, mainly comprising of transcribed spoken data in Hindi, TED talks with Hindi transcripts, and Wikipedia articles 
+3. contains about 50k translated pairs, mainly comprising of transcribed spoken data in Hindi, TED talks with Hindi transcripts, and Wikipedia articles [^3]
 
 #### 2) Hindi to Hindi Grammar Correction & Paraphrasing 
 The creation and writing of Hindi content often encounters challenges such as errors in orthography, syntax, or overall fluency. Despite these prevalent issues, the vast diversity of errors in Hindi, coupled with the limited availability of digitized content, has left this area largely unexplored.
 
-As part of the Viraam project, we have developed a comprehensive corpus of <incorrect Hindi, corrected Hindi> pairs using a blend of automated and manual techniques, with a special focus on grammatical errors in the language. This includes:
-
-Generating inflectional errors from scraped Wikipedia content using POS taggers.
-Manually extracting errors from traditional Hindi grammar books.
+As the part of the Viraam project, we have developed a comprehensive corpus of <incorrect Hindi, corrected Hindi> pairs using a blend of automated and manual techniques, with a special focus on grammatical errors in the language. This includes:
+- Generating inflectional errors from scraped Wikipedia content using POS taggers.
+- Manually extracting errors from traditional Hindi grammar books and preprocesing them to suit our requiremnents [^4].
 
 The following flowchart represents errors we have chosen for representation within our dataset.
 
 [closable columns]
 flowchart
 
-#### 3) Question/Answer or Conversational Content
+#### 3) Transliteration
+The model is finetuned using 2 sets of transliteration datasets; 
+- It features 30k transliterated word, and sentence pairs [^5]. The advantage it offers is that it provides multiple transliterated hindi words for single hindi word that different people might use. Such as the word `पिघले` can be written as `pighle` or `pighale`.
+- It includes 55.5k sentence pairs that are uniquely presented in a QnA fashion, with data formats handling instruct-follow, user-assistant roleplay, code-writing and general Q/A on Indian Context [^6].
+
+#### 4) Question/Answer or Conversational Content
 We also aim to enhance the model's capabilities for extractive question answering and assistive tasks. This includes enabling the model to identify and extract precise answers from Hindi texts based on user queries, or provided context as well as understand user commands appropriately.
 
-#### 4) Transliteration
-The model is finetuned using 2 sets of transliteration datasets; [12] features 30k transliterated word, and sentence pairs. [11] includes 55.5k sentence pairs that are uniquely presented in a QnA fashion, with data formats handling instruct-follow, roleplay (Indian Famous Characters), code-writing and general Q/A on Indian Context.
+For this purpose various Hindi QnA based datasets with variety of questions from subjects like chemistry, biology, physics, indian history were selected and were sprinkled throughout the data. Apart from providing the necessary Indian context and Hindi terminologies this also makes sure that the model doesnt overfit while performing monotonous tasks like translation and transliteration.
 
-#### 5) Scientific & Mathematical Reasoning
-To facilitate quantitive reasoning abilities within the finetuned model, we include Hindi datasets with scientific context, in the form of; [8] that contains about 40k Hindi translated problem-solution pairs spanning across 25 Biology topics, and [9], constituting similar context for Chemistry. 
+#### Scientific & Mathematical Reasoning
+To facilitate quantitive reasoning abilities within the finetuned model, we include Hindi datasets with scientific context, in the form of; [^7] that contains about 40k Hindi translated problem-solution pairs spanning across 25 Biology topics, and [^8], constituting similar context for Chemistry. 
 
-As part of the required mathematical content, we translated 15k pairs from [10] using the (deep_translator)[https://pypi.org/project/deep-translator/] pipeline for Google Translate, featuring a wide variety of question-answer pairs spread across various important mathematical concepts like arithmetic calculations, and word problems.
+As part of the required mathematical content, we translated 15k pairs from [^9] using the (deep_translator)[https://pypi.org/project/deep-translator/] pipeline for Google Translate, featuring a wide variety of question-answer pairs spread across various important mathematical concepts like arithmetic calculations, and word problems, providing necessary hindi terminologies for mathematical problems.
 
-#### 6) Contextual Awareness
-In complex languages like Hindi, many intra-language nuances stem from cultural and historical events or stories. Therefore, incorporating cultural literacy into our dataset is crucial. [7] helps us adequately represent this within our model.
+#### Contextual Awareness QnA
+In complex languages like Hindi, many intra-language nuances stem from cultural and historical events or stories. Therefore, incorporating cultural literacy into our dataset is crucial. [^10] and [^11] helps us adequately represent this within our model.
 
 
 ### Instruction Tuning
@@ -102,26 +121,30 @@ To minimize instruction-specific bias in model responses, we incorporate diverse
 
 ### References 
 
-[1] https://github.com/suvaansh/Machine-Translation-English-to-Hindi-/tree/master 
+[^1]: https://github.com/suvaansh/Machine-Translation-English-to-Hindi-/tree/master 
 
-[2] https://tatoeba.org/en/downloads
+[^2]: https://tatoeba.org/en/downloads
 
-[3] https://lindat.mff.cuni.cz/repository/xmlui/handle/11858/00-097C-0000-0023-625F-0#
+[^3]: https://lindat.mff.cuni.cz/repository/xmlui/handle/11858/00-097C-0000-0023-625F-0#
 
-[4] https://github.com/s-ankur/wikiextract/tree/0d854e6e91db3e5e99d1e9a58781e08513fbbfb4
+[^4]: हिन्दी व्याकरण एवं रचना प्रबोध, 9-12, Board of Secondary Education Rajasthan, Ajmer
 
-[5] हिन्दी व्याकरण एवं रचना प्रबोध, 9-12, Board of Secondary Education Rajasthan, Ajmer
+[^5]: https://raw.githubusercontent.com/bsantraigi/tensorflow-seq2seq-hindi/master/data/Hindi%20-%20Word%20Transliteration%20Pairs%201.txt  
 
-[6] https://huggingface.co/datasets/aneesh-b/SQuAD_Hindi
+[^6]: https://huggingface.co/datasets/manishiitg/aditi-syn-v2
 
-[7] https://huggingface.co/datasets/kaifahmad/indian-history-hindi-QA-3.4k
+[^7]: https://huggingface.co/datasets/manishiitg/camel-ai-biology
 
-[8] https://huggingface.co/datasets/manishiitg/camel-ai-biology
+[^8]: https://huggingface.co/datasets/manishiitg/camel-ai-chemistry
 
-[9] https://huggingface.co/datasets/manishiitg/camel-ai-chemistry
+[^9]: https://huggingface.co/datasets/meta-math/MetaMathQA/tree/main
 
-[10] https://huggingface.co/datasets/meta-math/MetaMathQA/tree/main
+[^10]: https://huggingface.co/datasets/aneesh-b/SQuAD_Hindi
 
-[11] https://huggingface.co/datasets/manishiitg/aditi-syn-v2
+[^11]: https://huggingface.co/datasets/kaifahmad/indian-history-hindi-QA-3.4k
 
-[12] https://raw.githubusercontent.com/bsantraigi/tensorflow-seq2seq-hindi/master/data/Hindi%20-%20Word%20Transliteration%20Pairs%201.txt  
+[^12]: https://github.com/s-ankur/wikiextract/tree/0d854e6e91db3e5e99d1e9a58781e08513fbbfb4
+
+
+
+
