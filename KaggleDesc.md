@@ -1,5 +1,5 @@
 ## Introduction
-
+### Background
 General finetuning efforts for Indian-Based Languages including Hindi are concentrated in producing task-specific LLMs, for example, QnA Agents that can help with assistive tasks in said language. Most of these models are trained with a focus on machine translation, and often generate qualitatively erroneous content because they lack an in-depth knowledge about the language.
 
 Moreover, Grammar rules differ from language to language , same is the case for the Hindi language. To name a few differences :-
@@ -30,12 +30,12 @@ Moreover, Grammar rules differ from language to language , same is the case for 
   
 A lot of finetunining efforts fail to capture this essence of the Hindi language leading to illformed context and subpar translations. 
 
-Various cultral nuances in the Hindi language like most of the languages of the Indian Subcontinent make it standout from its European counterparts. One such nuance is use of different pronouns depending upon the context such as age, position of a person being referred. For exmaple:-
+Various cultral nuances in the Hindi language like most of the languages of the Indian Subcontinent make it standout from its European counterparts. One such nuance is use of different pronouns depending upon the context such as age, position of a person being referred to etc. For exmaple:-
 
 | English         | Hindi          | Context                       |
 |-----------------|----------------|--------------------------------------------------|
 |You should sleep.| तुम्हें सोना चाहिए। | For someone of the same age, younger, more casual |
-|You should sleep.|आपको सोना चाहिए।| for someone older, more respecfule                |
+|You should sleep.|आपको सोना चाहिए।| for someone older, more respecful                 |
 
 and many more.
 
@@ -45,8 +45,9 @@ say `भरोसा` which means trust will be written as `bharosa`
 
 using the ASCII Keyboard, we have on our devices. We'll refer to this is as Transliterated Hindi, Phonetic Hindi or simply Hinglish. This is probably the most popular form of written hindi communication in the digital age. This needs to be considered while we are finetung our Language models on Hindi, as good percentage of user input in hindi will be of this form.
 
+### Proposed Solution
 
-With Viraam, our goal is to develop an LLM for Hindi that:
+With Viraam - Our finetunined Gemma2 Model, our goal is to develop an LLM for Hindi that tries to:
 - Produces grammatically and culturally accurate textual media
 - Suggests paraphrasing, and literary corrections for uploaded content
 - Engages in fluent conversational dialogue with the user, including the understanding of transliterated and phonetic texts
