@@ -118,6 +118,7 @@ In complex languages like Hindi, many intra-language nuances stem from cultural 
 
 ### Adding Instructions to our Datasets
 As mentioned above ,to minimize instruction-specific bias in model responses and to make the model more averse with varied inputs , we incorporate diverse instruction prompts. These prompts are a combination human and machine generated data. Each dataset within the combined collection includes 12- 15 variations of instructions. These instructions are written in English, Hindi and Transliterated Hindi. One exmaple of instructions for grammar correction datasets is given below.
+
 ```
 instructions_grammar = [
     "Identify and correct the mistake in the provided Hindi sentence:",
@@ -142,6 +143,47 @@ instructions_grammar = [
 The rest can be viewed in [instructions_config](https://github.com/jaydee029/gemma2hin/blob/main/instruction_config.py) file.
 
 ### Various Tools Used
+For Grammar
+- Error Injection Tool
+  - We used a custom error injection tool for inserting grammatical error of various types into the hindi sentences fetched from wikipedia dumps. This tool was created by forking the wikiextracter tool [^12], we added a custom POS tagger into the tool [here](https://github.com/kashvigarg/gemma2hin/blob/main/pos_tagger.py) and made necessary changes in the legacy codebase to make it work upto our expectations.
+  - We added grammatical errors associated with hindi adjectives , pronouns and auxilliary verbs, The POS Tagger would break the sentences in to small tokens and assign each token a POS Tag, these lists would then pass through our [insert_error](https://github.com/kashvigarg/gemma2hin/blob/main/insert_errors.py) script, which would juggle various parts of speech such as `matras` to include a small error of a certain type in each sentence.
+- [build_vyakaran_datasets.py](https://github.com/kashvigarg/gemma2hin/blob/main/build_vyakaran_dataset.py) uses Vyakaran Rachna textbook to build and clean grammar datasets
+ 
+scripts used for data in english to hindi translation
+- [extract_tsv.py](https://github.com/kashvigarg/gemma2hin/blob/main/data/refactor_scripts/extract_tsv.py) underlines how the dataset has been converted from its parent TSV format to a usable uniform CSV structure.
+- [extract_mixed_corp.py](https://github.com/kashvigarg/gemma2hin/blob/main/data/refactor_scripts/extract_mixed_corp.py) underlines how the dataset has been extracted from the mixed-language corpus.
+- [extract_txt.py](https://github.com/kashvigarg/gemma2hin/blob/main/data/refactor_scripts/extract_txt.py) underlines how the dataset has been extracted to CSV from its original TXT format.
+
+scripts used for transliterated data collection and processing
+- [re_filter_data.py](https://github.com/kashvigarg/gemma2hin/blob/main/data/refactor_scripts/re_filter_data.py) and [translit_to_csv.py](https://github.com/kashvigarg/gemma2hin/blob/main/data/refactor_scripts/translit_to_csv.py) have been used to describe the creation of the transliterated datasets. The former removes a combination of literals from the datasets while translit_to_csv.py underlines the creation of the translit-aditi dataset.
+
+Other scripts
+[translator.py](https://github.com/kashvigarg/gemma2hin/blob/main/translator.py) has been used to translate 15k data pairs from the MetaMathQA dataset, to Hindi, in order to adequately represent mathematical reasoning within the training dataset.
+
+[add_instructions.py](https://github.com/kashvigarg/gemma2hin/blob/main/add_instructions.py) adds a combination of varied instructions to the target dataset for reducing instruction-based bias in model training
+
+[filter_token_len.py](https://github.com/kashvigarg/gemma2hin/blob/main/filter_token_len.py) has been used to filter datasets with accordance to token size limits; 512 and 1024.
+
+## Fine Tunining Process
+For finetuning our first step was to calculate the resources each variant of gemma2 model would require, considering the resourcs available to us which were:-
+- kaggle notebooks with 30hr of gpu usage per week.
+- colab pro subscribtion which allowed 100 compute units in one purchase.
+
+A Gemma2 2B paramter model seemed apt, as it required 8GB of RAM and occupied 5GB storage approximately, while these are configurations of running the model, fintuining it would require much more computational power in the form of GPUs. Our resource constraints did not allows us to finetuning the 9B(18GB Vram) and 27B(56GB Vram) parameter models, as inferencing itself from these model would fire up all the kaggle GPUs and still might end up in `CUDA OUT OF Memory error`. 
+
+This was followed by the selection of one a Parameter Efficient Finituning (PEFT) Method, since full fintuining would not be possible with the resouces we had, PEFT Methods allow us to choose only a subset of parameters from the available parametrs of the model, and train those parameters on our dataset, this often produces comparably performance to that of full finetuning while using limited memory and computational resources. The various types of PEFT Methods include Q-LORA, Q-DORA , LOFTQ etc.
+
+Here Q stands for quantization, Quantization is simply a method for reducing memory and computational resources required by a Large Language Model, allowing us to finetuning these model in low resource environments. It does that by represent the weights and activations of the models in smaller data types i.e. models are usually use float32 or bfloat32 or full precision for representation, this can be reduced to half precison or float16/bfloat16 or even lower to 8bit and 4 bit data types.
+This reduces the calculation the model has to do interms of matrix multiplication etc.
+
+Quantization can be of various types such as `nf4 using bitsandbytes` , `AWQ Activation Aware Quantization`,`GPTQ` etc. We chose the standard nf4 quantization simply because it had more community support while AWQ quantization would give us a hard time working with Gemma2.
+
+Coming back to the PEFT Methods, In theory its stated in various papers that LOFTQ > QDORA>= LORA [^13]. We used various hugging face libraries while implementing these models and we relaized that we are yet to have LOFTQ support for Gemma2, its better since its more aware in terms of the parameter it chooses. Moving on to the comparison between QDORA AND QLORA , in theory QDORA's performance is slightly better than QLORA while practical experiments have shown that their performances are comaprable. 
+Considering their performances are comparable we chose QLORA because its more widely used and as a result has a better community support.
+
+## Intial Strategy
+While making this choice we devised a strategy, Our plan was to train one/a few adapters and run tests to infer that if we should merge them in the model or load them on top of it to achieve better results while inferencing. A practical experiment[^14] done by Benajamin Marie compared the performance of Misrtral-7b Models using QLORA, QDORA and LOFTQ, the adapters created by each of these were then loaded on top, merged with the unquantized model and merged with the unquantized model followed by requnatization. It was observed in the case were adapters were merged and requantized using AWQ or GPTQ quantization, QLORA adpaters turned out to be the fastest followed by QDORA and LOFTQ, faster than any other inferencing technique. 
+As a result we chose to train our adapter(s) , merge them in the model and requantize it towards the end. 
 
 
 ### References 
@@ -169,6 +211,10 @@ The rest can be viewed in [instructions_config](https://github.com/jaydee029/gem
 [^11]: https://huggingface.co/datasets/kaifahmad/indian-history-hindi-QA-3.4k
 
 [^12]: https://github.com/s-ankur/wikiextract/tree/0d854e6e91db3e5e99d1e9a58781e08513fbbfb4
+
+[^13]: https://developer.nvidia.com/blog/introducing-dora-a-high-performing-alternative-to-lora-for-fine-tuning/
+
+[^14]: https://kaitchup.substack.com/p/training-loading-and-merging-qdora
 
 
 
