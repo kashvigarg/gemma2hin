@@ -142,7 +142,26 @@ instructions_grammar = [
 The rest can be viewed in [instructions_config](https://github.com/jaydee029/gemma2hin/blob/main/instruction_config.py) file.
 
 ### Various Tools Used
+For Grammar
+- Error Injection Tool
+  - We used a custom error injection tool for inserting grammatical error of various types into the hindi sentences fetched from wikipedia dumps. This tool was created by forking the wikiextracter tool [^12], we added a custom POS tagger into the tool [here](https://github.com/kashvigarg/gemma2hin/blob/main/pos_tagger.py) and made necessary changes in the legacy codebase to make it work upto our expectations.
+  - We added grammatical errors associated with hindi adjectives , pronouns and auxilliary verbs, The POS Tagger would break the sentences in to small tokens and assign each token a POS Tag, these lists would then pass through our [insert_error](https://github.com/kashvigarg/gemma2hin/blob/main/insert_errors.py) script, which would juggle various parts of speech such as `matras` to include a small error of a certain type in each sentence.
+- [build_vyakaran_datasets.py](https://github.com/kashvigarg/gemma2hin/blob/main/build_vyakaran_dataset.py) uses Vyakaran Rachna textbook to build and clean grammar datasets
+ 
+scripts used for data in english to hindi translation
+- [extract_tsv.py](https://github.com/kashvigarg/gemma2hin/blob/main/data/refactor_scripts/extract_tsv.py) underlines how the dataset has been converted from its parent TSV format to a usable uniform CSV structure.
+- [extract_mixed_corp.py](https://github.com/kashvigarg/gemma2hin/blob/main/data/refactor_scripts/extract_mixed_corp.py) underlines how the dataset has been extracted from the mixed-language corpus.
+- [extract_txt.py](https://github.com/kashvigarg/gemma2hin/blob/main/data/refactor_scripts/extract_txt.py) underlines how the dataset has been extracted to CSV from its original TXT format.
 
+scripts used for transliterated data collection and processing
+- [re_filter_data.py](https://github.com/kashvigarg/gemma2hin/blob/main/data/refactor_scripts/re_filter_data.py) and [translit_to_csv.py](https://github.com/kashvigarg/gemma2hin/blob/main/data/refactor_scripts/translit_to_csv.py) have been used to describe the creation of the transliterated datasets. The former removes a combination of literals from the datasets while translit_to_csv.py underlines the creation of the translit-aditi dataset.
+
+Other scripts
+[translator.py](https://github.com/kashvigarg/gemma2hin/blob/main/translator.py) has been used to translate 15k data pairs from the MetaMathQA dataset, to Hindi, in order to adequately represent mathematical reasoning within the training dataset.
+
+[add_instructions.py](https://github.com/kashvigarg/gemma2hin/blob/main/add_instructions.py) adds a combination of varied instructions to the target dataset for reducing instruction-based bias in model training
+
+[filter_token_len.py](https://github.com/kashvigarg/gemma2hin/blob/main/filter_token_len.py) has been used to filter datasets with accordance to token size limits; 512 and 1024.
 
 ### References 
 
