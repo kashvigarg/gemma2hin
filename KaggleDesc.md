@@ -2,6 +2,50 @@
 
 General finetuning efforts for Indian-Based Languages including Hindi are concentrated in producing task-specific LLMs, for example, QnA Agents that can help with assistive tasks in said language. Most of these models are trained with a focus on machine translation, and often generate qualitatively erroneous content because they lack an in-depth knowledge about the language.
 
+Moreover, Grammar rules differ from language to language , same is the case for the Hindi language. To name a few differences :-
+- Verb placement in English is usually before the noun, while in hindi its usually after the noun. Example:-
+
+  `English - I like Mangoes.`
+
+  `like` is the verb and `Mangoes` is the noun.
+
+  `Hindi Translation - मुझे आम पसंद हैं।`
+
+  `आम` is the noun i.e Mangoes arrives first followed by the verb `पसंद हैं` ie like
+- In english the gender only affects the pronouns and nouns, while in hindi it affects the verb as well. Example:-
+
+  `He drives a car` - `Male`
+  
+  `She drives a car` - `Female`
+
+  In both these cases the verb `drive` remains the same while the pronouns change.
+
+  `वह कार चलाता है।` - `Male`
+  
+  `वह कार चलाती है।` - `Female`
+
+  In this case the verb is converted from `चलाता है।` in Male to `चलाती है।` in Females.
+
+  and many more.
+  
+A lot of finetunining efforts fail to capture this essence of the Hindi language leading to illformed context and subpar translations. 
+
+Various cultral nuances in the Hindi language like most of the languages of the Indian Subcontinent make it standout from its European counterparts. One such nuance is use of different pronouns depending upon the context such as age, position of a person being referred. For exmaple:-
+
+| English         | Hindi          | Context                       |
+|-----------------|----------------|--------------------------------------------------|
+|You should sleep.| तुम्हें सोना चाहिए। | For someone of the same age, younger, more casual |
+|You should sleep.|आपको सोना चाहिए।| for someone older, more respecfule                |
+
+and many more.
+
+Now coming on to the bigger issue, most people who interact with LLMs using Hindi, are most probably using an  `ASCII KEYBOARD`, which provides only romanized english characters, apart from that various aspects of hindi language such as the use of `matras` make it harder to type. As a result a Hindi word 
+
+say `भरोसा` which means trust will be written as `bharosa`
+
+using the ASCII Keyboard, we have on our devices. We'll refer to this is as Transliterated Hindi, Phonetic Hindi or simply Hinglish. This is probably the most popular form of written hindi communication in the digital age. This needs to be considered while we are finetung our Language models on Hindi, as good percentage of user input in hindi will be of this form.
+
+
 With Viraam, our goal is to develop an LLM for Hindi that:
 - Produces grammatically and culturally accurate textual media
 - Suggests paraphrasing, and literary corrections for uploaded content
