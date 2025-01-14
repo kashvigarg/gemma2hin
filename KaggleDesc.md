@@ -73,6 +73,7 @@ Data curation is one of the most if not the most important step in the finetunig
 
 As part of the finetuning process, we train the Gemma2 2b parameter instructive model on a few sets of mixed data with the following compositional characteristics:
 
+### Types of Datasets
 #### 1) English to Hindi Translation
 In complex adaptive languages like Hindi, there are multiple ways to express the same idea, for example, the word "Jump" can be translated as उछलो or कूदो, among others.
 
@@ -115,8 +116,32 @@ As part of the required mathematical content, we translated 15k pairs from [^9] 
 In complex languages like Hindi, many intra-language nuances stem from cultural and historical events or stories. Therefore, incorporating cultural literacy into our dataset is crucial. [^10] and [^11] helps us adequately represent this within our model.
 
 
-### Instruction Tuning
-To minimize instruction-specific bias in model responses, we incorporate diverse instruction prompts. These prompts are partially generated using GPT-4 and Gemini 1.5. Each dataset within the combined collection includes at least 15 variations of instructions.
+### Adding Instructions to our Datasets
+As mentioned above ,to minimize instruction-specific bias in model responses and to make the model more averse with varied inputs , we incorporate diverse instruction prompts. These prompts are a combination human and machine generated data. Each dataset within the combined collection includes 12- 15 variations of instructions. These instructions are written in English, Hindi and Transliterated Hindi. One exmaple of instructions for grammar correction datasets is given below.
+```
+instructions_grammar = [
+    "Identify and correct the mistake in the provided Hindi sentence:",
+    "Fix the grammar error in the given Hindi sentence:",
+    "Make corrections to the grammar of the following Hindi sentence:",
+    "Correct the given sentence:",
+    "Identify any grammatical issues in the sentence and fix them:",
+
+    "दिए गए वाक्य में व्याकरण संबंधी त्रुटि को सुधारें।",
+    "हिंदी वाक्य में मौजूद गलती को ठीक करें।",
+    "निम्नलिखित वाक्य में व्याकरण की त्रुटि पहचानकर सुधारें।",
+    "दिए गए वाक्य को व्याकरण की दृष्टि से सही करें।",
+    "हिंदी वाक्य में गलती खोजें और उसे ठीक करें।",
+
+    "Diye gaye sentence mein grammar ki galti ko theek karo:",
+    "Hindi sentence ke errors ko identify karke correct karo:",
+    "Grammar mistake ko correct karo jo sentence mein hai:",
+    "Hindi sentence ka grammar sahi karo:",
+    "Jo bhi error hai Hindi sentence mein, usse fix karo:"
+]
+```
+The rest can be viewed in [instructions_config](https://github.com/jaydee029/gemma2hin/blob/main/instruction_config.py) file.
+
+### Various Tools Used
 
 
 ### References 
